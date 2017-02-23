@@ -15,15 +15,15 @@ Feature: Feature Template
           #And I expect "node" contains "value" in response body
 
           Scenario: Sample scenario
-    Given My api base URL is "http://token.qa.elitecareer.net"
+    Given My api base URL is "http://user.qa.elitecareer.net"
  #       And Port number is "port"
-    When My request method is "POST"
+    When My request method is "GET"
         And I set header "fusion-api-key" as "fusionqateam"
  #       And I set query parameter "param" as "value"
  #      And I set path parameter "param" as "value"
-        And I set request body from "employerValidCrendential.json"
+     #   And I set request body from "employerValidCrendential.json"
         And I make a request to "/api/v1/user"
-   		Then I expect status code as "201"
+   		Then I expect status code as "200"
           And I want to print response body
  #         And I expect "node" equals "value" in response body
  #         And I expect "node" contains "value" in response body
